@@ -13,6 +13,7 @@ log shell 登入读入配置文件顺序：
 
 * 上面那三个文件其实只做了一件事判断~/.bashrc这个文件是否存在，如果存在的话，读取这个文件。打开~/.bashrc，在~/.bashrc中，只是判断/etc/bashrc是否存在，存在的话读取/etc/bashrc。/etc/bashrc中帮我们做了几件事情，设置umask,设置PS1,读取/etc/profile.d/*.sh。是不是和/etc/profile做的事情差不多。
 
+![image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/20170908094045.jpg)
 # non-login shell
 
 non-login shell:以X windows登入linux后，再以X的图形化界面启动终端机，此时那个终端机并不需要再次输入用户名和密码，那个bash的环境就称为non-login shell
