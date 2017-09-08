@@ -22,3 +22,11 @@ log shell 登入读入配置文件顺序：
 # non-login shell
 
 non-login shell:以X windows登入linux后，再以X的图形化界面启动终端机，此时那个终端机并不需要再次输入用户名和密码，那个bash的环境就称为non-login shell
+
+### 介绍
+
+* 以X window登入linux后，再以X的图形化界面启动终端机，此时那个终端机并不需要再次输入用户名和密码，那个bash的环境就称为non-login shell。
+
+* 在原本的bash环境中再次下达bash这个命令，同样没有要求输入用户名和密码，那个第二个bash也是non-login-shell。
+
+* non-login shell只会读取~/.bashrc这个文件，具体步骤和上边一样。修改完成~/.bashrc如果想让配置立即生效，只需要执行source命令：source ~/.bashrc。
