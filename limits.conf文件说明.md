@@ -14,5 +14,6 @@
 修改limits.conf配置文件：
 
 odin    hard    memlock  79223827
+
 odin    soft    memlock  79223827
 
