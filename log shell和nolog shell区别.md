@@ -2,6 +2,7 @@
 
 # login shell
 
+##介绍
 login shell:取得bash时需要完整登入流程，就称为login shell。举例来说，同tty1~tty6登入时，需要输入用户名和密码，此时取的bash就称为log shell。
 
 log shell 登入读入配置文件顺序：
@@ -13,7 +14,7 @@ log shell 登入读入配置文件顺序：
 
 * 上面那三个文件其实只做了一件事判断~/.bashrc这个文件是否存在，如果存在的话，读取这个文件。打开~/.bashrc，在~/.bashrc中，只是判断/etc/bashrc是否存在，存在的话读取/etc/bashrc。/etc/bashrc中帮我们做了几件事情，设置umask,设置PS1,读取/etc/profile.d/*.sh。是不是和/etc/profile做的事情差不多。
 
-# login shell 流程图
+## login shell 流程图
   ![image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/20170908094045.jpg)
 # non-login shell
 
