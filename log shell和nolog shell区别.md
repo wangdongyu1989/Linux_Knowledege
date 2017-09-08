@@ -9,6 +9,7 @@ log shell 登入读入配置文件顺序：
 * /etc/profile, 处在shell配置文件的最顶端。这是系统shell环境的全局设定，例如PATH，MAIL很多环境变量。然后设置你的umask的值，然后读
 取/etc/profile.d/*.sh中的一系列文件。这个目录下主要规定了语系，颜色，vi的命令别名等。有的说还会读取/etc/inputrc,/etc/sysconfig/i18n等，对它的修改，会影响到所有用户。不建议修改。
 
+* ~/.bash_profile或~/.bash_login或~/.profile 其实这三个文件只会读取一个的，如果存在~/.bash_profile就不会读取后两个；如果不存在，则读取~/.bash_login，如果~/.bash_login存在的话，就不会读取~/.profile。不同的系统，这三个文件的存在情况不一样。
 
 
 
