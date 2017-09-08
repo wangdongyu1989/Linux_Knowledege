@@ -24,3 +24,7 @@ limits.conf文件实际是linux PAM(插入式认证模块，Pluggable Authentica
 limits.conf的格式如下：
 
 username|@groupname type resource limit
+
+username|@groupname：设置需要被限制的用户名，组名前面加@和用户名区别。也可以用通配符*来做所有用户的限制。
+
+type：有 soft，hard 和 -，soft 指的是当前系统生效的设置值。hard 表明系统中所能设定的最大值。soft 的限制不能比har 限制高。用 - 就表明同时设置了 soft 和 hard 的值。
