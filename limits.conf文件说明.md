@@ -17,3 +17,10 @@ odin    hard    memlock  79223827
 
 odin    soft    memlock  79223827
 
+## 说明
+
+limits.conf文件实际是linux PAM(插入式认证模块，Pluggable Authentication Modules)中pam_limits.so的配置文件，而且只针对单个会话。
+
+limits.conf的格式如下：
+
+username|@groupname type resource limit
