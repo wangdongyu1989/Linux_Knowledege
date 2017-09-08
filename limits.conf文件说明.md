@@ -29,3 +29,27 @@ username|@groupname：设置需要被限制的用户名，组名前面加@和用
 
 type：有 soft，hard 和 -，soft 指的是当前系统生效的设置值。hard 表明系统中所能设定的最大值。soft 的限制不能比har 限制高。用 - 就表明同时设置了 soft 
 和 hard 的值。
+
+resource：
+
+core - 限制内核文件的大小
+
+date - 最大数据大小
+
+fsize - 最大文件大小
+
+memlock - 最大锁定内存地址空间
+
+nofile - 打开文件的最大数目
+
+rss - 最大持久设置大小
+
+stack - 最大栈大小
+
+cpu - 以分钟为单位的最多 CPU 时间
+
+noproc - 进程的最大数目
+
+as - 地址空间限制
+
+maxlogins - 此用户允许登录的最大数目
