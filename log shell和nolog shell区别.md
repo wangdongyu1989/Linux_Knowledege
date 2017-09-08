@@ -4,9 +4,11 @@
 
 login shell:取得bash时需要完整登入流程，就称为login shell。举例来说，同tty1~tty6登入时，需要输入用户名和密码，此时取的bash就称为log shell。
 
+log shell 登入读入配置文件顺序：
 
+* /etc/profile, 处在shell配置文件的最顶端。这是系统shell环境的全局设定，例如PATH，MAIL很多环境变量。然后设置你的umask的值，然后是读
 
-
+  取/etc/profile.d/*.sh  对它的修改，会影响到所有用户。不建议修改
 
 
 
