@@ -2,7 +2,7 @@
 
 # login shell
 
-##介绍
+## 介绍
 
 login shell:取得bash时需要完整登入流程，就称为login shell。举例来说，同tty1~tty6登入时，需要输入用户名和密码，此时取的bash就称为log shell。
 
