@@ -7,9 +7,7 @@ login shell:取得bash时需要完整登入流程，就称为login shell。举�
 log shell 登入读入配置文件顺序：
 
 * /etc/profile, 处在shell配置文件的最顶端。这是系统shell环境的全局设定，例如PATH，MAIL很多环境变量。然后设置你的umask的值，然后读
-取/etc/profile.d/*.sh中的一系列文件。这个目录下主要规定了语系，颜色，vi的命令别名等。有的说还会读取/etc/inputrc,/etc/sysconfig/i18n等，
-  
-  对它的修改，会影响到所有用户。不建议修改。
+取/etc/profile.d/*.sh中的一系列文件。这个目录下主要规定了语系，颜色，vi的命令别名等。有的说还会读取/etc/inputrc,/etc/sysconfig/i18n等，对它的修改，会影响到所有用户。不建议修改。
 
 
 
