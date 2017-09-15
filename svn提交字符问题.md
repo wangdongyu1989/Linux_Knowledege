@@ -26,6 +26,7 @@ for example:
   text/plain; charset=unicode
 
 文本类型转换： 
+             
              iconv -f  utf-8 -t gbk xxx.cpp -o xxx.cp.bak
         
              rm -rf xxx.cp
