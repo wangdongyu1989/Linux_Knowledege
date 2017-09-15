@@ -5,7 +5,7 @@
 
 svn: Commit blocked by pre-commit hook (exit code 1) with output:
 
-+ /usr/bin/svnlook author -t170319-3nku /srv/svn/repos.d/websearch4
+/usr/bin/svnlook author -t170319-3nku /srv/svn/repos.d/websearch4
 
 iconv: illegal input sequence at position 4817
 
