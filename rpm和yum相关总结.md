@@ -23,4 +23,4 @@ yum 的配置文件分为两部分：main 和repository:
 main 部分定义了全局配置选项，整个yum 配置文件应该只有一个main。常位于/etc/yum.conf 中。
 repository 部分定义了每个源/服务器的具体配置，可以有一到多个。常位于/etc/yum.repo.d 目录下的各文件中。
 
-yum的配置文件放到了/etc/yum.repos.d/目录下面
+yum的配置软件仓库地址放到了/etc/yum.repos.d/目录下面
