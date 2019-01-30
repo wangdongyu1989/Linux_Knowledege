@@ -23,4 +23,4 @@ yum 的配置文件分为两部分：main 和repository:
 main 部分定义了全局配置选项，整个yum 配置文件应该只有一个main。常位于/etc/yum.conf 中。
 repository 部分定义了每个源/服务器的具体配置，可以有一到多个。常位于/etc/yum.repo.d 目录下的各文件中。
 
-yum的配置软件仓库地址放到了/etc/yum.repos.d/目录下面
+yum的配置软件仓库地址放到了/etc/yum.repos.d/目录下面 /etc/yum.conf中pkgpolicy选项，包的策略。一共有两个选项，newest 和last，这个作用是如果你设置了多个repository，而同一软件在不同的repository 中同时存在，yum 应该安装哪一个，如果是newest，则yum 会安装最新的那个版本。如果是last，则yum 会将服务器id 以字母表排序，并选择最后的那个服务器上的软件安装。一般都是选newest。
