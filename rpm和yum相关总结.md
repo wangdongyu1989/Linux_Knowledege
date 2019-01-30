@@ -8,7 +8,7 @@ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org 导入相关软件秘
 
 注释：noarch.rpm可以在不同的cpu上使用，包有这么几种（后缀）：*.386.rpm,*.486.rpm,*.586. rpm,*.686.rpm，这是与CPU的指令集有关.
 
-rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rp 后面接的软件及时没有安装，则系统将予以安装；否则后面的软件有安装过旧版，则系统自动更新至新版
+rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm 后面接的软件及时没有安装，则系统将予以安装；否则后面的软件有安装过旧版，则系统自动更新至新版
 
 rpm -qa 列出所有的，已经安装在本机linux系统上面的所有软件名称
 
