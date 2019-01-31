@@ -77,7 +77,7 @@ cmake -G "Unix Makefiles" -DLLVM_TARGETS_TO_BUILD="BPF;X86" \
   
 make -j $THREADS
 
-sudo make install
+make install
 
 
 cd ../clang-build
@@ -88,7 +88,7 @@ cmake -G "Unix Makefiles" -DLLVM_TARGETS_TO_BUILD="BPF;X86" \
 
 make -j $THREADS
 
-sudo make install
+make install
 
 ### 8: 下载BCC的依赖
 
