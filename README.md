@@ -12,4 +12,4 @@
 
 * [   rpm和yum相关总结](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/rpm%E5%92%8Cyum%E7%9B%B8%E5%85%B3%E6%80%BB%E7%BB%93.md)
 
-* [   pcstat工具安装使用](https://github.com/wangdongyu1989/Linux_Knowledege/edit/master/pcstat%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85.md)
+* [   pcstat工具安装使用](https://github.com/wangdongyu1989/Linux_Knowledege/edit/master/pcstat%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85.md)
