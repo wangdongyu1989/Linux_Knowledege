@@ -15,3 +15,11 @@ yum --enablerepo=elrepo-kernel install kernel-ml   kernel-ml-devel.x86_64
 yum remove -y kernel-headers kernel-tools kernel-tools-libs
 
 yum --enablerepo="elrepo-kernel" install -y kernel-ml kernel-ml-devel kernel-ml
+
+#### 4: 然后设置：grub2-mkconfig -o /boot/grub2/grub.cfg 生成启动菜单,把kernel-ml 4.9设为默认,重启
+
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+grub2-set-default 0
+
+reboot
