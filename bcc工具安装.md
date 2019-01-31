@@ -120,6 +120,8 @@ make -j $THREADS
 
 make install
 
+export PATH=$PATH:/usr/share/bcc/tools
+
 ### 10: 测试
 
 cachestat
