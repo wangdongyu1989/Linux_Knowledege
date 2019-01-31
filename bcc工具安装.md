@@ -110,3 +110,11 @@ make -j $THREADS
 
 make install
 
+### 10: 测试
+
+cachestat
+
+
+参考：1：https://www.jianshu.com/p/997e0a6d8e09
+
+     2：https://github.com/iovisor/bcc/issues/462
