@@ -92,7 +92,17 @@ make install
 
 ### 8: 下载BCC的依赖
 
-yum install -y elfutils-libelf-devel flex
+yum install -y elfutils-libelf-devel flex texinfo
+
+git clone https://github.com/HewlettPackard/netperf.git
+
+cd netperf/
+
+autoreconf -isv
+
+./configure
+
+make & make install
 
 ### 9: 下载BCC
 
