@@ -1,14 +1,14 @@
-#### 1:  bcc-tools 需要内核版本为 4.1 或者更新的版本，我们首先需要升级内核
+### 1:  bcc-tools 需要内核版本为 4.1 或者更新的版本，我们首先需要升级内核
 
 yum update -y
 
-#### 2: 安装elrepo内核，最好能访问外网
+### 2: 安装elrepo内核，最好能访问外网
 
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
 
-#### 3: 先卸载旧的 kernel-headers，kernel-tools, kernel-tools-libs，只保留内核，然后
+### 3: 先卸载旧的 kernel-headers，kernel-tools, kernel-tools-libs，只保留内核，然后
 yum --enablerepo=elrepo-kernel install kernel-ml   kernel-ml-devel.x86_64
 注意，这里是下载内核和驱动，如果不下载驱动，到后面bcc软件链接的文件就没有，在/usr/src/kernels下4.20.0-1.el7.elrepo.x86_64目录
 
@@ -16,7 +16,7 @@ yum remove -y kernel-headers kernel-tools kernel-tools-libs
 
 yum --enablerepo="elrepo-kernel" install -y kernel-ml kernel-ml-devel kernel-ml
 
-#### 4: 然后设置：grub2-mkconfig -o /boot/grub2/grub.cfg 生成启动菜单,把kernel-ml 4.9设为默认,重启
+### 4: 然后设置：grub2-mkconfig -o /boot/grub2/grub.cfg 生成启动菜单,把kernel-ml 4.9设为默认,重启
 
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
@@ -24,7 +24,7 @@ grub2-set-default 0
 
 reboot
 
-#### 5: 安装gcc
+### 5: 安装gcc
 
 yum install gcc-c++
 
@@ -40,7 +40,7 @@ make -j $THREADS
 
 make install
 
-#### 6: 安装bison
+### 6: 安装bison
 
 curl -OL https://ftp.gnu.org/gnu/bison/bison-3.0.tar.xz
 
@@ -55,7 +55,7 @@ make -j $THREADS  注意多线程太多 容易耗尽内存
 
 make install
 
-#### 6: 安装clang
+### 7: 安装clang
 
 curl -LO http://releases.llvm.org/3.9.1/cfe-3.9.1.src.tar.xz
 
