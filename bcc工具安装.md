@@ -56,3 +56,35 @@ make -j $THREADS  注意多线程太多 容易耗尽内存
 make install
 
 #### 6: 安装clang
+
+curl -LO http://releases.llvm.org/3.9.1/cfe-3.9.1.src.tar.xz
+
+curl -LO http://releases.llvm.org/3.9.1/llvm-3.9.1.src.tar.xz
+
+tar -xf cfe-3.9.1.src.tar.xz
+
+tar -xf llvm-3.9.1.src.tar.xz
+
+mkdir clang-build
+
+mkdir llvm-build
+
+cd llvm-build
+
+cmake -G "Unix Makefiles" -DLLVM_TARGETS_TO_BUILD="BPF;X86" \
+  -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr ../llvm-3.9.1.src
+  
+make -j $THREADS
+
+sudo make install
+
+
+cd ../clang-build
+
+cmake -G "Unix Makefiles" -DLLVM_TARGETS_TO_BUILD="BPF;X86" \
+
+  -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr ../cfe-3.9.1.src
+
+make -j $THREADS
+
+sudo make install
