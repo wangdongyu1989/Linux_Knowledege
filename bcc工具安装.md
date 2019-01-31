@@ -23,3 +23,33 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 grub2-set-default 0
 
 reboot
+
+#### 5: 安装gcc
+
+yum install gcc-c++
+
+wget https://cmake.org/files/v3.7/cmake-3.7.0.tar.gz
+
+tar xf cmake-3.7.0.tar.gz
+
+cd cmake-3.7.0
+
+./configure
+
+make -j $THREADS
+
+make install
+
+#### 6: 安装bison
+
+curl -OL https://ftp.gnu.org/gnu/bison/bison-3.0.tar.xz
+
+tar -xf bison-3.0.tar.xz
+
+cd bison-3.0
+
+./configure
+
+make -j $THREADS
+
+sudo make install
