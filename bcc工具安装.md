@@ -72,6 +72,7 @@ mkdir llvm-build
 cd llvm-build
 
 cmake -G "Unix Makefiles" -DLLVM_TARGETS_TO_BUILD="BPF;X86" \
+
   -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr ../llvm-3.9.1.src
   
 make -j $THREADS
@@ -88,3 +89,24 @@ cmake -G "Unix Makefiles" -DLLVM_TARGETS_TO_BUILD="BPF;X86" \
 make -j $THREADS
 
 sudo make install
+
+### 8: 下载BCC的依赖
+
+yum install -y elfutils-libelf-devel flex
+
+### 9: 下载BCC
+
+git clone https://github.com/iovisor/bcc.git
+
+export CFLAGS=-I${HOME}/build/linux-4.9.71/usr/include
+
+mkdir bcc-build
+
+cd bcc-build
+
+cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=/usr ../bcc
+
+make -j $THREADS
+
+make install
+
