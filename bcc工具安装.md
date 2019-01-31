@@ -50,6 +50,9 @@ cd bison-3.0
 
 ./configure
 
-make -j $THREADS
+make -j $THREADS  注意多线程太多 容易耗尽内存
 
-sudo make install
+
+make install
+
+#### 6: 安装clang
