@@ -9,3 +9,5 @@
 * [   svn提交字符问题解决方法之一](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/svn%E6%8F%90%E4%BA%A4%E5%AD%97%E7%AC%A6%E9%97%AE%E9%A2%98.md)
 
 * [   bcc工具安装](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/bcc%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85.md)
+
+* [   rpm和yum相关总结](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/rpm%E5%92%8Cyum%E7%9B%B8%E5%85%B3%E6%80%BB%E7%BB%93.md)
