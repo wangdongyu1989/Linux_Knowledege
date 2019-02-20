@@ -1,7 +1,7 @@
 
 关于CPU C-States 省电模式，你需要知道的事情
 
-I， 引言
+## I， 引言
 
 为了在CPU空闲的时候降低功耗，CPU可以被命令进入low-power模式。每个CPU都有几种power模式，这些模式被统称为C-states或者C-modes。
 
