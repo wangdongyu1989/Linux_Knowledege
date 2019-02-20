@@ -61,11 +61,9 @@ C2模式同样是在486DX4中被引入的。处理器增加了一个名叫"STPCL
 
 C2模式存在两个子模式：Stop Grant 和Stop Clock。前者在STPCLK管脚使能后进入，如前面介绍，处理器的核心时钟被关闭，但是时钟发生部件(PLL)仍然在工
 
-作，以产生外部总线所需要的时钟。
+作，以产生外部总线所需要的时钟。486DX4, Pentium, Pentium MMX, K5, K6, K6-II和K6-III可以更进一步，进入Stop Clock模式。在该模式下，时钟发生
 
-486DX4, Pentium, Pentium MMX, K5, K6, K6-II和K6-III可以更进一步，进入Stop Clock模式。在该模式下，时钟发生部件也被关停，因此外部时钟信号也
-
-被关停。现在的处理器都已经不存在Stop Clock模式，被C3 Deep Sleep模式取代。
+部件也被关停，因此外部时钟信号也被关停。现在的处理器都已经不存在Stop Clock模式，被C3 Deep Sleep模式取代。
 
 和C1模式相似，处理器可以暂时性的离开C2模式，去处理重要的外部请求。这个暂时的离开被称为Stop Clock Snoop State, HALT/Grant Snoop State或者简
 
