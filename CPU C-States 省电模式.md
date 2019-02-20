@@ -1,7 +1,7 @@
 
 关于CPU C-States 省电模式，你需要知道的事情
 
-[!image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/25871104_1329203344Dd1G.png)
+![image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/25871104_1329203344Dd1G.png)
 
 ## I， 引言
 
