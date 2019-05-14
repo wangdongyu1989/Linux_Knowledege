@@ -21,6 +21,6 @@ expect eof
 
 ![image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/expect1.png)
 
-设置步骤2：
+设置步骤2：auto_login.sh 第一个参数主机名 第二个参数密码
 
 ![image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/expect2.png)
