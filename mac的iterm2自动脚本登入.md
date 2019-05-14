@@ -16,3 +16,11 @@ log_user 1
 interact
 expect eof
 ```
+
+设置步骤1：
+
+[!image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/expect1.png)
+
+设置步骤2：
+
+[!image](https://github.com/wangdongyu1989/Linux_Knowledege/blob/master/image/expect2.png)
