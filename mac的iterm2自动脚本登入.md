@@ -6,13 +6,13 @@ set host  [lindex $argv 0]
 set password  [lindex $argv 1]
 set myhome /root/
 
-spawn -noecho ssh $user@$host
+spawn -noecho ssh $user@$host  
 expect "*assword:*"
 send "$password\r"
-log_user 0
+log_user 0     关闭显示输出
 expect "#*"
 send  "cd $myhome\r"
-log_user 1
+log_user 1     打开显示输出
 interact
 expect eof
 ```
