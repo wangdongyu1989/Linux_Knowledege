@@ -2,4 +2,12 @@
 
 2，在~/.bashr配置文件中添加export LANG=en_US.UTF-8
 
-3，
+3，在~/.vimrc配置文件中添加
+
+set fileencodings=utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1,gb2312
+
+set termencoding=utf-8
+
+set encoding=utf-8
+
+set fileencoding=gb18030
