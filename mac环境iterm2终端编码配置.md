@@ -15,3 +15,8 @@ set termencoding=gb18030
 set encoding=utf-8
 set fileencoding=gb18030
 ```
+
+linux相应编码知识总结：
+
+locale命令是根据计算机用户所使用的语言，所在国家或者地区，以及当地文化传统定义的一个软件运行时的语言环境。
+
